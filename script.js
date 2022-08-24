@@ -23,10 +23,10 @@ class Enemy {
         this.flapSpeed = Math.floor(Math.random() * 2 + 1)
     }
     update(){
-        this.y += Math.random() * 5 - 2.5
-        this.x += Math.random() * 5 - 2.5   // letting it move around randomlly
+        this.y += Math.random() * 7 - 3.5
+        this.x += Math.random() * 7 - 3.5   // letting it move around randomlly
         // animate sprites
-        if (gameFrame % this.flapSpeed === 0){
+        if (gameFrame % this.flapSpeed === 0){      // manipulates flapping wings  
             this.frame > 4 ? this.frame = 0 : this.frame++
         }
     }
